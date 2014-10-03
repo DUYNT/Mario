@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56FCEC7819DE3F0500AA1D0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FCEC7719DE3F0500AA1D0A /* AppDelegate.swift */; };
+		56FCEC7A19DE3F0500AA1D0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FCEC7919DE3F0500AA1D0A /* ViewController.swift */; };
+		56FCEC7D19DE3F0500AA1D0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56FCEC7B19DE3F0500AA1D0A /* Main.storyboard */; };
+		56FCEC7F19DE3F0500AA1D0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56FCEC7E19DE3F0500AA1D0A /* Images.xcassets */; };
+		56FCEC8219DE3F0500AA1D0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56FCEC8019DE3F0500AA1D0A /* LaunchScreen.xib */; };
+		56FCEC8E19DE3F0500AA1D0A /* MariooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FCEC8D19DE3F0500AA1D0A /* MariooTests.swift */; };
+		56FCECA419DE411800AA1D0A /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = 56FCEC9819DE411800AA1D0A /* box.png */; };
+		56FCECA519DE411800AA1D0A /* city1.png in Resources */ = {isa = PBXBuildFile; fileRef = 56FCEC9919DE411800AA1D0A /* city1.png */; };
+		56FCECA619DE411800AA1D0A /* city2.png in Resources */ = {isa = PBXBuildFile; fileRef = 56FCEC9A19DE411800AA1D0A /* city2.png */; };
+		56FCECA719DE411800AA1D0A /* city3.png in Resources */ = {isa = PBXBuildFile; fileRef = 56FCEC9B19DE411800AA1D0A /* city3.png */; };
+		56FCECA819DE411800AA1D0A /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 56FCEC9C19DE411800AA1D0A /* 1.png */; };
+		56FCECA919DE411800AA1D0A /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 56FCEC9D19DE411800AA1D0A /* 2.png */; };
+		56FCECAA19DE411800AA1D0A /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 56FCEC9E19DE411800AA1D0A /* 3.png */; };
+		56FCECAB19DE411800AA1D0A /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 56FCEC9F19DE411800AA1D0A /* 4.png */; };
+		56FCECAC19DE411800AA1D0A /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 56FCECA019DE411800AA1D0A /* 5.png */; };
+		56FCECAD19DE411800AA1D0A /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 56FCECA119DE411800AA1D0A /* 6.png */; };
+		56FCECAE19DE411800AA1D0A /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 56FCECA219DE411800AA1D0A /* 7.png */; };
+		56FCECAF19DE411800AA1D0A /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 56FCECA319DE411800AA1D0A /* 8.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56FCEC8819DE3F0500AA1D0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56FCEC6A19DE3F0500AA1D0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56FCEC7119DE3F0500AA1D0A;
+			remoteInfo = Marioo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		56FCEC7219DE3F0500AA1D0A /* Marioo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marioo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56FCEC7619DE3F0500AA1D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56FCEC7719DE3F0500AA1D0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		56FCEC7919DE3F0500AA1D0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56FCEC7C19DE3F0500AA1D0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56FCEC7E19DE3F0500AA1D0A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		56FCEC8119DE3F0500AA1D0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		56FCEC8719DE3F0500AA1D0A /* MariooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MariooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56FCEC8C19DE3F0500AA1D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56FCEC8D19DE3F0500AA1D0A /* MariooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MariooTests.swift; sourceTree = "<group>"; };
+		56FCEC9819DE411800AA1D0A /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
+		56FCEC9919DE411800AA1D0A /* city1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = city1.png; sourceTree = "<group>"; };
+		56FCEC9A19DE411800AA1D0A /* city2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = city2.png; sourceTree = "<group>"; };
+		56FCEC9B19DE411800AA1D0A /* city3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = city3.png; sourceTree = "<group>"; };
+		56FCEC9C19DE411800AA1D0A /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		56FCEC9D19DE411800AA1D0A /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		56FCEC9E19DE411800AA1D0A /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		56FCEC9F19DE411800AA1D0A /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		56FCECA019DE411800AA1D0A /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		56FCECA119DE411800AA1D0A /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		56FCECA219DE411800AA1D0A /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		56FCECA319DE411800AA1D0A /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56FCEC6F19DE3F0500AA1D0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56FCEC8419DE3F0500AA1D0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56FCEC6919DE3F0500AA1D0A = {
+			isa = PBXGroup;
+			children = (
+				56FCEC7419DE3F0500AA1D0A /* Marioo */,
+				56FCEC8A19DE3F0500AA1D0A /* MariooTests */,
+				56FCEC7319DE3F0500AA1D0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56FCEC7319DE3F0500AA1D0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56FCEC7219DE3F0500AA1D0A /* Marioo.app */,
+				56FCEC8719DE3F0500AA1D0A /* MariooTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56FCEC7419DE3F0500AA1D0A /* Marioo */ = {
+			isa = PBXGroup;
+			children = (
+				56FCEC9719DE40F100AA1D0A /* Image */,
+				56FCEC7719DE3F0500AA1D0A /* AppDelegate.swift */,
+				56FCEC7919DE3F0500AA1D0A /* ViewController.swift */,
+				56FCEC7B19DE3F0500AA1D0A /* Main.storyboard */,
+				56FCEC7E19DE3F0500AA1D0A /* Images.xcassets */,
+				56FCEC8019DE3F0500AA1D0A /* LaunchScreen.xib */,
+				56FCEC7519DE3F0500AA1D0A /* Supporting Files */,
+			);
+			path = Marioo;
+			sourceTree = "<group>";
+		};
+		56FCEC7519DE3F0500AA1D0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56FCEC7619DE3F0500AA1D0A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56FCEC8A19DE3F0500AA1D0A /* MariooTests */ = {
+			isa = PBXGroup;
+			children = (
+				56FCEC8D19DE3F0500AA1D0A /* MariooTests.swift */,
+				56FCEC8B19DE3F0500AA1D0A /* Supporting Files */,
+			);
+			path = MariooTests;
+			sourceTree = "<group>";
+		};
+		56FCEC8B19DE3F0500AA1D0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56FCEC8C19DE3F0500AA1D0A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56FCEC9719DE40F100AA1D0A /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				56FCEC9819DE411800AA1D0A /* box.png */,
+				56FCEC9919DE411800AA1D0A /* city1.png */,
+				56FCEC9A19DE411800AA1D0A /* city2.png */,
+				56FCEC9B19DE411800AA1D0A /* city3.png */,
+				56FCEC9C19DE411800AA1D0A /* 1.png */,
+				56FCEC9D19DE411800AA1D0A /* 2.png */,
+				56FCEC9E19DE411800AA1D0A /* 3.png */,
+				56FCEC9F19DE411800AA1D0A /* 4.png */,
+				56FCECA019DE411800AA1D0A /* 5.png */,
+				56FCECA119DE411800AA1D0A /* 6.png */,
+				56FCECA219DE411800AA1D0A /* 7.png */,
+				56FCECA319DE411800AA1D0A /* 8.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56FCEC7119DE3F0500AA1D0A /* Marioo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56FCEC9119DE3F0500AA1D0A /* Build configuration list for PBXNativeTarget "Marioo" */;
+			buildPhases = (
+				56FCEC6E19DE3F0500AA1D0A /* Sources */,
+				56FCEC6F19DE3F0500AA1D0A /* Frameworks */,
+				56FCEC7019DE3F0500AA1D0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Marioo;
+			productName = Marioo;
+			productReference = 56FCEC7219DE3F0500AA1D0A /* Marioo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56FCEC8619DE3F0500AA1D0A /* MariooTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56FCEC9419DE3F0500AA1D0A /* Build configuration list for PBXNativeTarget "MariooTests" */;
+			buildPhases = (
+				56FCEC8319DE3F0500AA1D0A /* Sources */,
+				56FCEC8419DE3F0500AA1D0A /* Frameworks */,
+				56FCEC8519DE3F0500AA1D0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56FCEC8919DE3F0500AA1D0A /* PBXTargetDependency */,
+			);
+			name = MariooTests;
+			productName = MariooTests;
+			productReference = 56FCEC8719DE3F0500AA1D0A /* MariooTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56FCEC6A19DE3F0500AA1D0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = DuyNT;
+				TargetAttributes = {
+					56FCEC7119DE3F0500AA1D0A = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					56FCEC8619DE3F0500AA1D0A = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 56FCEC7119DE3F0500AA1D0A;
+					};
+				};
+			};
+			buildConfigurationList = 56FCEC6D19DE3F0500AA1D0A /* Build configuration list for PBXProject "Marioo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56FCEC6919DE3F0500AA1D0A;
+			productRefGroup = 56FCEC7319DE3F0500AA1D0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56FCEC7119DE3F0500AA1D0A /* Marioo */,
+				56FCEC8619DE3F0500AA1D0A /* MariooTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56FCEC7019DE3F0500AA1D0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56FCECAF19DE411800AA1D0A /* 8.png in Resources */,
+				56FCECAB19DE411800AA1D0A /* 4.png in Resources */,
+				56FCEC7D19DE3F0500AA1D0A /* Main.storyboard in Resources */,
+				56FCECA819DE411800AA1D0A /* 1.png in Resources */,
+				56FCECAE19DE411800AA1D0A /* 7.png in Resources */,
+				56FCEC8219DE3F0500AA1D0A /* LaunchScreen.xib in Resources */,
+				56FCECA519DE411800AA1D0A /* city1.png in Resources */,
+				56FCECA619DE411800AA1D0A /* city2.png in Resources */,
+				56FCECAD19DE411800AA1D0A /* 6.png in Resources */,
+				56FCECAA19DE411800AA1D0A /* 3.png in Resources */,
+				56FCEC7F19DE3F0500AA1D0A /* Images.xcassets in Resources */,
+				56FCECA919DE411800AA1D0A /* 2.png in Resources */,
+				56FCECAC19DE411800AA1D0A /* 5.png in Resources */,
+				56FCECA719DE411800AA1D0A /* city3.png in Resources */,
+				56FCECA419DE411800AA1D0A /* box.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56FCEC8519DE3F0500AA1D0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56FCEC6E19DE3F0500AA1D0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56FCEC7A19DE3F0500AA1D0A /* ViewController.swift in Sources */,
+				56FCEC7819DE3F0500AA1D0A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56FCEC8319DE3F0500AA1D0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56FCEC8E19DE3F0500AA1D0A /* MariooTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56FCEC8919DE3F0500AA1D0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56FCEC7119DE3F0500AA1D0A /* Marioo */;
+			targetProxy = 56FCEC8819DE3F0500AA1D0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56FCEC7B19DE3F0500AA1D0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56FCEC7C19DE3F0500AA1D0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		56FCEC8019DE3F0500AA1D0A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56FCEC8119DE3F0500AA1D0A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56FCEC8F19DE3F0500AA1D0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		56FCEC9019DE3F0500AA1D0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56FCEC9219DE3F0500AA1D0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Marioo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		56FCEC9319DE3F0500AA1D0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Marioo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		56FCEC9519DE3F0500AA1D0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MariooTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marioo.app/Marioo";
+			};
+			name = Debug;
+		};
+		56FCEC9619DE3F0500AA1D0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MariooTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marioo.app/Marioo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56FCEC6D19DE3F0500AA1D0A /* Build configuration list for PBXProject "Marioo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56FCEC8F19DE3F0500AA1D0A /* Debug */,
+				56FCEC9019DE3F0500AA1D0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56FCEC9119DE3F0500AA1D0A /* Build configuration list for PBXNativeTarget "Marioo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56FCEC9219DE3F0500AA1D0A /* Debug */,
+				56FCEC9319DE3F0500AA1D0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		56FCEC9419DE3F0500AA1D0A /* Build configuration list for PBXNativeTarget "MariooTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56FCEC9519DE3F0500AA1D0A /* Debug */,
+				56FCEC9619DE3F0500AA1D0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56FCEC6A19DE3F0500AA1D0A /* Project object */;
+}
