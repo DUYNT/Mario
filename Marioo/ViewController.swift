@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     var velY: Double = 0.0
     var accY: Double = 4.0
     var count: UILabel!
-    var number: Int = 0
+    var number: Int = 1
     var massenger: UIAlertView!
 
     
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         self.edgesForExtendedLayout = UIRectEdge.None
         viewSize = self.view.bounds.size
         viewHeight = Double(viewSize.height) - 60
-        
+
         city1 = UIImageView(frame: CGRect(x: 0, y: viewHeight - cityHeight, width: cityWidth, height: cityHeight))
         city1!.image = UIImage(named: "city1.png")
         self.view.addSubview(city1!)
@@ -43,19 +43,14 @@ class ViewController: UIViewController {
         city4!.image = UIImage(named: "city3.png")
         self.view.addSubview(city4!)
         
-        box = UIImageView(frame: CGRect(x: boxWidth, y: viewHeight - boxHeiht - 20, width: boxWidth, height: boxHeiht))
-        box!.image = UIImage(named: "box.png")
-        self.view.addSubview(box!)
-        
-        count = UILabel(frame: CGRect(x: 200, y: 50, width: 50, height: 50))
+        count = UILabel(frame: CGRect(x: viewSize.width * 0.7, y: viewSize.height - 60, width: 50, height: 50))
         count!.text = "0"
-        count!.backgroundColor = UIColor.blueColor()
-        count!.textColor = UIColor.whiteColor()
+        count!.textColor = UIColor.blackColor()
         count!.font = UIFont.systemFontOfSize(30)
         self.view.addSubview(count!)
         
         mario = UIImageView(frame: CGRect(x: 0, y: 0, width: 65, height: 102))
-        mario?.center = CGPoint(x: viewSize.width * 0.5, y: CGFloat(viewHeight) - 10 - mario!.bounds.size.height * 0.5)
+        mario?.center = CGPoint(x: viewSize.width * 0.4, y: CGFloat(viewHeight) - 10 - mario!.bounds.size.height * 0.5)
         // cấu hình để UIImage nhận tương tác va chạm. bình thường ko có
         mario!.userInteractionEnabled = true
         mario!.multipleTouchEnabled = false
@@ -76,6 +71,11 @@ class ViewController: UIViewController {
         // gắn bộ nhận dạng tương tác chạm (tap) vào madio
         let tap = UITapGestureRecognizer(target: self, action: "tapOnMario")
         mario!.addGestureRecognizer(tap)
+        
+        box = UIImageView(frame: CGRect(x: boxWidth, y: viewHeight - boxHeiht - 20, width: boxWidth, height: boxHeiht))
+        box!.image = UIImage(named: "box.png")
+        self.view.addSubview(box!)
+
         self._timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "runCity:", userInfo: nil, repeats: true)
         self._timer?.fire()
         
@@ -87,24 +87,33 @@ class ViewController: UIViewController {
         
         if city1!.frame.origin.x + CGFloat(cityWidth) < 0 {
             city1!.frame = CGRect(x: Double(city4!.frame.origin.x) + cityWidth, y: Double(city1!.frame.origin.y), width: cityWidth, height: cityHeight)
-            box!.frame = CGRect(x: 400, y: Double(box!.frame.origin.y), width: boxWidth, height: boxHeiht)
-            count!.text = NSString(format: "%d", number++)
+            box!.frame = CGRect(x: 300, y: Double(box!.frame.origin.y), width: boxWidth, height: boxHeiht)
         }
         if city4!.frame.origin.x + CGFloat(cityWidth) < 0 {
             city4!.frame = CGRect(x: Double(city1!.frame.origin.x) + cityWidth, y: Double(city1!.frame.origin.y), width: cityWidth, height: cityHeight)
-            box!.frame = CGRect(x: 400, y: Double(box!.frame.origin.y), width: boxWidth, height: boxHeiht)
+            box!.frame = CGRect(x: 300, y: Double(box!.frame.origin.y), width: boxWidth, height: boxHeiht)
+        }
+        if (box!.center.x - CGFloat(moveX) == mario!.center.x){
             count!.text = NSString(format: "%d", number++)
+            
         }
         if CGRectIntersectsRect(mario!.frame, box!.frame){
-            massenger = UIAlertView(title: "Fail", message: "Game Over", delegate: self, cancelButtonTitle: "OK")
+            println("\(number + 1)")
+            massenger = UIAlertView(title: NSString(format: "You have %d", number - 1), message: "Game Over", delegate: self.navigationController?.popToRootViewControllerAnimated(true), cancelButtonTitle: "OK")
             massenger.show()
+            
             nstimer.invalidate()
-            mario!.transform = CGAffineTransformMakeRotation(3.14 * 3)
+            mario!.stopAnimating()
+            mario!.image = UIImage(named: "1.png")
+            self.view.addSubview(mario!)
+            mario!.transform = CGAffineTransformMakeRotation(CGFloat(M_SQRT2 * 3))
+
         }
 //        else {
 //            count!.text = NSString(format: "%d", number++)
 //        }
     }
+    
     
     func tapOnMario() {
         var nsTime = NSTimer.scheduledTimerWithTimeInterval(2.1, target: self, selector: "marioNhay:", userInfo: nil, repeats: true)
@@ -112,12 +121,17 @@ class ViewController: UIViewController {
         
     }
     func marioNhay(sender: NSTimer){
-        UIView.animateWithDuration(1.1, animations: {
-            self.mario!.center = CGPointMake(self.mario!.frame.size.width * 3, 400)
+        UIView.animateWithDuration(0.9, animations: {
+            self.mario!.center = CGPointMake(self.viewSize.width * 0.4, 400)
+            self.mario!.stopAnimating()
+            self.mario!.image = UIImage(named: "1.png")
+            self.view.addSubview(self.mario!)
+
             }, completion: {
                 bool in
                 UIView.animateWithDuration(0.5, animations: {
-                    self.mario!.center = CGPoint(x: self.viewSize.width * 0.5, y: CGFloat(self.viewHeight) - 10 - self.mario!.bounds.size.height * 0.5)
+                    self.mario!.center = CGPoint(x: self.viewSize.width * 0.4, y: CGFloat(self.viewHeight) - 10 - self.mario!.bounds.size.height * 0.5)
+                        self.mario!.startAnimating()
                     }, completion: {
                         finishes in
                         sender.invalidate()

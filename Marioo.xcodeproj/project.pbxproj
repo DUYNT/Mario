@@ -103,7 +103,6 @@
 			children = (
 				56FCEC9719DE40F100AA1D0A /* Image */,
 				56FCEC7719DE3F0500AA1D0A /* AppDelegate.swift */,
-				56FCEC7919DE3F0500AA1D0A /* ViewController.swift */,
 				56FCEC7B19DE3F0500AA1D0A /* Main.storyboard */,
 				56FCEC7E19DE3F0500AA1D0A /* Images.xcassets */,
 				56FCEC8019DE3F0500AA1D0A /* LaunchScreen.xib */,
@@ -151,6 +150,7 @@
 				56FCECA019DE411800AA1D0A /* 5.png */,
 				56FCECA119DE411800AA1D0A /* 6.png */,
 				56FCECA219DE411800AA1D0A /* 7.png */,
+				56FCEC7919DE3F0500AA1D0A /* ViewController.swift */,
 				56FCECA319DE411800AA1D0A /* 8.png */,
 			);
 			name = Image;
@@ -461,6 +461,7 @@
 				56FCEC9319DE3F0500AA1D0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56FCEC9419DE3F0500AA1D0A /* Build configuration list for PBXNativeTarget "MariooTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +470,7 @@
 				56FCEC9619DE3F0500AA1D0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
